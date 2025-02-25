@@ -1,7 +1,5 @@
 # Easy-Experiments - Native Federation Plugin Skeleton
 
-Welcome to the **Easy-Experiments Native Federation Plugin Skeleton** !
-
 This repository serves as a **template** for creating and publishing a new plugin (remote) that can be loaded dynamically by the host application using [Webpack 5 Module Federation](https://webpack.js.org/concepts/module-federation/) in an **Angular 19** environment.
 
 Below, you’ll find everything you need to know to get started: from setting up your local environment and customizing this template, to testing, building, and deploying your plugin.
