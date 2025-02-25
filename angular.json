@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"testmf": {
+		"ee-plugin": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -19,10 +19,10 @@
 					"options": {},
 					"configurations": {
 						"production": {
-							"target": "testmf:esbuild:production"
+							"target": "ee-plugin:esbuild:production"
 						},
 						"development": {
-							"target": "testmf:esbuild:development",
+							"target": "ee-plugin:esbuild:development",
 							"dev": true
 						}
 					},
@@ -31,7 +31,7 @@
 				"serve": {
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
-						"target": "testmf:serve-original:development",
+						"target": "ee-plugin:serve-original:development",
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
@@ -64,7 +64,7 @@
 				"esbuild": {
 					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-						"outputPath": "dist/testmf",
+						"outputPath": "dist/ee-plugin",
 						"index": "src/index.html",
 						"browser": "src/main.ts",
 						"polyfills": [
@@ -112,10 +112,10 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"buildTarget": "testmf:esbuild:production"
+							"buildTarget": "ee-plugin:esbuild:production"
 						},
 						"development": {
-							"buildTarget": "testmf:esbuild:development"
+							"buildTarget": "ee-plugin:esbuild:development"
 						}
 					},
 					"defaultConfiguration": "development",

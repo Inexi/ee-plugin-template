@@ -2,7 +2,7 @@ const { withNativeFederation, shareAll } = require('@angular-architects/native-f
 
 module.exports = withNativeFederation({
 
-  name: 'testmf',
+  name: 'ee-plugin',
 
   exposes: {
     './Component': './src/app/app.component.ts',
@@ -17,10 +17,6 @@ module.exports = withNativeFederation({
     'rxjs/fetch',
     'rxjs/testing',
     'rxjs/webSocket',
-    // Add further packages you don't need at runtime
   ]
 
-  // Please read our FAQ about sharing libs:
-  // https://shorturl.at/jmzH0
-  
 });
